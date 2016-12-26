@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-void reverse(char *str, const size_t len);
+#include "fun.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,19 +17,4 @@ int main(int argc, char *argv[])
 	printf("%s\n", test2);
 	
 	return 0;
-}
-
-void reverse(char *str, const size_t len)
-{
-	int i = 0;
-	int j = len - 1;	
-	char tmp;
-
-	while (i <= j) {
-		tmp = str[i];
-		str[i] = str[j];
-		str[j] = tmp;	
-		i++;
-		j--;
-	}
 }
