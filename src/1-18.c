@@ -65,5 +65,13 @@ int main(int argc, char *argv[])
 		free(str);
 		str = NULL;
 	}
+
+	if (infile != stdin) {
+		fclose(infile);
+	}
+	if (outfile != stdout) {
+		fclose(outfile);
+	}
+
 	return 0;
 }
