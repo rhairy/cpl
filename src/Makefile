@@ -9,4 +9,4 @@ all : $(ALL)
 % : %.o
 
 clean : 
-	rm -rf *.o $(ALL)
+	rm -rf *.txt *.o $(ALL)
