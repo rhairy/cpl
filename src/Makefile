@@ -6,6 +6,8 @@ all : $(ALL)
 
 1-18 : fun.c fun.h
 
+1-19 : fun.c fun.h
+
 % : %.o
 
 clean : 
