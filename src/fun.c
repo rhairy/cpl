@@ -1,6 +1,21 @@
 /* fun.c - Useful functions for CPL exercises. */
 #include "fun.h"
 
+void reverse(char *str, const size_t len)
+{
+	int i = 0;
+	int j = len - 1;	
+	char tmp;
+
+	while (i <= j) {
+		tmp = str[i];
+		str[i] = str[j];
+		str[j] = tmp;	
+		i++;
+		j--;
+	}
+}
+
 size_t rmtrail(char *str, const size_t len)
 {
 	/* Starting at the penultimate element (assuming last '\0'),

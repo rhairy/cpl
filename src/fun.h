@@ -2,7 +2,9 @@
 
 #include <stdio.h>
 
-/* Removes trailing blanks and tabs from str. '\n' is preserved.
- * Accepts a pointer to a char array str and the size of the string
- * excluding '\n'. */
+/* Reverses a string. */
+void reverse(char *str, const size_t len);
+
+/* Removes trailing blanks and tabs from str by. 
+ * Returns the length of the string without the empty space. */
 size_t rmtrail(char *str, const size_t len);
